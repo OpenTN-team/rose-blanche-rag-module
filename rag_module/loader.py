@@ -180,19 +180,24 @@ class DocumentLoader:
         while start < length:
             end = min(start + self.chunk_size, length)
 
-            # Prefer to cut at the last sentence-end before `end`
+            # Prefer to cut at the last sentence-end before `end`,
+            # but only if the boundary leaves a chunk large enough to be meaningful
+            # (avoids start going backwards when the boundary is too close to start).
             if end < length:
                 boundary = self._find_sentence_boundary(text, start, end)
-                end = boundary if boundary > start else end
+                if boundary > start + self.chunk_overlap:
+                    end = boundary
 
             chunk = text[start:end].strip()
             if len(chunk) >= self.min_chunk_len:
                 chunks.append(chunk)
 
-            # Advance with overlap
-            start = end - self.chunk_overlap
-            if start <= 0 or (end == length):
+            if end >= length:
                 break
+
+            # Advance with overlap — guarantee forward progress to avoid infinite loops
+            next_start = end - self.chunk_overlap
+            start = max(next_start, start + 1)
 
         return chunks
 

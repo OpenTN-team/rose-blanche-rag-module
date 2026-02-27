@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16       # PostgreSQL 16 avec l'extension pgvector pré-installée
+    container_name: rag_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:       boulangerie_db
+      POSTGRES_USER:     rag_user
+      POSTGRES_PASSWORD: rag_secret
+    ports:
+      - "5432:5432"                     # accessible depuis localhost:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data  # persistance des données
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql   # création table au démarrage
+
+volumes:
+  pgdata:
