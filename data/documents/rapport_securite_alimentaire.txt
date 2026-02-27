@@ -1,0 +1,23 @@
+Voici un exemple de rapport sur les procédures de sécurité alimentaire.
+
+Chapitre 1 : Recommandations générales
+Les entreprises agroalimentaires doivent respecter les normes HACCP (Hazard Analysis Critical Control Points). 
+Il est impératif de maintenir la chaîne du froid à une température inférieure à 4°C pour les produits frais.
+Les équipements de production doivent être nettoyés et désinfectés quotidiennement selon le protocole établi.
+Chaque lot de production doit faire l'objet d'un contrôle qualité rigoureux avant commercialisation.
+
+Chapitre 2 : Procédures de stockage
+Les matières premières doivent être stockées séparément des produits finis afin d'éviter toute contamination croisée.
+La durée de conservation maximale des produits semi-finis est fixée à 72 heures en chambre froide.
+Un registre de traçabilité doit être tenu à jour en permanence pour chaque lot entrant et sortant.
+Les zones de stockage doivent être maintenues propres et exemptes de nuisibles.
+
+Chapitre 3 : Cas d'usage pratiques
+En cas de détection d'un corps étranger dans un lot de production, la procédure de retrait immédiat doit être déclenchée.
+Une notification doit être envoyée à tous les distributeurs concernés dans un délai de 24 heures.
+Le lot suspect doit être isolé, identifié et conservé pour analyse jusqu'à la conclusion de l'enquête interne.
+
+Chapitre 4 : Formation du personnel
+Tout salarié travaillant en zone de production doit suivre une formation HACCP de base avant sa prise de poste.
+Des sessions de recyclage sont organisées annuellement pour maintenir le niveau de compétence.
+Les bonnes pratiques d'hygiène personnelle (lavage des mains, port des EPI) sont rappelées lors de chaque briefing quotidien.

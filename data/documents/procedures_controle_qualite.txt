@@ -1,0 +1,34 @@
+PROCÉDURES OPÉRATIONNELLES STANDARDISÉES — CONTRÔLE QUALITÉ
+
+1. OBJECTIF
+Ce document décrit les procédures de contrôle qualité applicables à toutes les étapes de la chaîne de production de l'entreprise Rose Blanche Group.
+
+2. CHAMP D'APPLICATION
+Ces procédures s'appliquent à l'ensemble des unités de production, de conditionnement et de distribution.
+
+3. ANALYSE DES RISQUES
+3.1 Risques biologiques : contamination par bactéries pathogènes (Salmonella, Listeria monocytogenes, E. coli O157:H7).
+3.2 Risques chimiques : résidus de pesticides, contaminants environnementaux, additifs non conformes.
+3.3 Risques physiques : corps étrangers (verre, métal, plastique) pouvant se retrouver dans les produits.
+
+4. POINTS CRITIQUES DE CONTRÔLE (CCP)
+CCP 1 — Réception des matières premières : contrôle visuel, microbiologique et documentaire de chaque lot entrant.
+CCP 2 — Traitement thermique : pasteurisation à 72°C pendant 15 secondes minimum (loi de la pasteurisation).
+CCP 3 — Conditionnement : vérification de l'intégrité des emballages et de l'étanchéité des scellages.
+CCP 4 — Expédition : contrôle de température des véhicules réfrigérés (≤ 4°C pour les produits frais).
+
+5. ACTIONS CORRECTIVES
+En cas de dépassement des limites critiques à l'un des CCP, les actions correctives suivantes s'appliquent :
+  - Arrêt immédiat de la ligne concernée.
+  - Identification et isolement du lot non conforme.
+  - Analyse des causes racines selon la méthode des 5M.
+  - Mise en place d'une action corrective documentée dans le CAPA (Corrective and Preventive Action) system.
+  - Vérification de l'efficacité de l'action corrective dans un délai maximum de 30 jours.
+
+6. SURVEILLANCE ET ENREGISTREMENTS
+Tous les résultats de contrôle doivent être consignés dans le système de gestion documentaire (ERP) dans les 2 heures suivant la mesure.
+Les enregistrements sont conservés pendant une durée minimale de 5 ans conformément à la réglementation en vigueur.
+
+7. AUDIT INTERNE
+Un audit interne du système HACCP est réalisé trimestriellement par l'équipe Qualité.
+Un audit de certification par un organisme tiers est effectué annuellement.

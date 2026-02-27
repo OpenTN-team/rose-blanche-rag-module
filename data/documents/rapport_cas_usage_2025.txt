@@ -1,0 +1,29 @@
+RAPPORT D'ANALYSE — CAS D'USAGE ET RECOMMANDATIONS STRATÉGIQUES 2025
+
+INTRODUCTION
+Ce rapport présente une synthèse des cas d'usage identifiés lors de l'exercice 2024–2025, accompagnée de recommandations stratégiques pour renforcer la compétitivité et la conformité réglementaire du Groupe Rose Blanche.
+
+CAS D'USAGE 1 : TRAÇABILITÉ NUMÉRIQUE DES LOTS
+Contexte : Difficulté à retrouver rapidement les informations d'un lot lors d'un retrait de marché.
+Solution mise en place : Déploiement d'un système de QR-code sur chaque unité de conditionnement, relié à la base de données de traçabilité en temps réel.
+Résultats obtenus : Réduction du temps de traçabilité de 48h à moins de 2h. Conformité totale avec le règlement (UE) n°178/2002.
+
+CAS D'USAGE 2 : OPTIMISATION DE LA CHAÎNE LOGISTIQUE FROIDE
+Contexte : Ruptures ponctuelles de la chaîne du froid lors des transferts entre entrepôts.
+Solution mise en place : Installation de capteurs IoT à transmission GPRS dans tous les véhicules réfrigérés. Alertes automatiques déclenchées si T° > 5°C.
+Résultats obtenus : Zéro incident de rupture de chaîne du froid enregistré depuis le déploiement (Q3 2024).
+
+CAS D'USAGE 3 : RÉDUCTION DU GASPILLAGE ALIMENTAIRE
+Contexte : Taux de gaspillage en fin de ligne de production estimé à 3,2%.
+Solution mise en place : Mise en place d'un algorithme de prévision de la demande basé sur l'IA pour ajuster les volumes de production quotidiens.
+Résultats obtenus : Réduction du gaspillage à 1,1%. Économies annuelles estimées à 420 000 DT.
+
+RECOMMANDATIONS STRATÉGIQUES
+1. Accélérer la digitalisation des processus de contrôle qualité pour réduire les délais de non-conformité.
+2. Renforcer les partenariats avec des fournisseurs certifiés ISO 22000 pour sécuriser l'approvisionnement en matières premières.
+3. Investir dans la formation continue des équipes terrain, notamment sur les nouvelles réglementations européennes d'hygiène.
+4. Explorer les opportunités offertes par l'intelligence artificielle pour la prédiction des pannes d'équipement (maintenance prédictive).
+5. Développer une politique RSE (Responsabilité Sociétale des Entreprises) intégrant des objectifs mesurables de réduction de l'empreinte carbone.
+
+CONCLUSION
+Les cas d'usage présentés démontrent la capacité du Groupe Rose Blanche à innover et à s'adapter rapidement aux défis de l'industrie agroalimentaire moderne. La poursuite de ces initiatives permettra de renforcer la position concurrentielle du groupe sur les marchés national et régional.
