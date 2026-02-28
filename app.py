@@ -30,12 +30,33 @@ st.markdown(
     <style>
     .main-title   { font-size: 2.2rem; font-weight: 800; color: #1a3c6e; }
     .sub-title    { font-size: 1.05rem; color: #555; margin-bottom: 1.5rem; }
+
+    /* make streamlit markdown container respect light/dark themes */
+    .stMarkdownContainer {
+        /* inherit the parent background so that the browser / Streamlit theme decides
+           the actual colour; streamlit sets this on the <body> depending on mode */
+        background-color: inherit !important;
+    }
+    /* fallbacks in case the theme isn't applying; use media queries */
+    @media (prefers-color-scheme: light) {
+        .stMarkdownContainer { background-color: #ffffff; }
+    }
+    @media (prefers-color-scheme: dark) {
+        .stMarkdownContainer { background-color: #0e1117; }
+    }
+
     .result-card  {
         background: #f8faff;
         border-left: 5px solid #1a3c6e;
         border-radius: 6px;
         padding: 1rem 1.2rem;
         margin-bottom: 1rem;
+    }
+    @media (prefers-color-scheme: dark) {
+        .result-card {
+            background: #2b2d3d;
+            border-left-color: #4e5d94;
+        }
     }
     .score-badge  {
         display: inline-block;
@@ -52,6 +73,11 @@ st.markdown(
         border-radius: 8px;
         padding: 0.75rem 1rem;
         text-align: center;
+    }
+    @media (prefers-color-scheme: dark) {
+        .metric-card {
+            background: #33354a;
+        }
     }
     </style>
     """,

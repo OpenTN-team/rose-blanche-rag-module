@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.env
+.env
+*.venv
+.venv/
+
+# Streamlit cache
+.streamlit/cache/
+
+# Virtual environment
+venv/
+ENV/
+
+# VSCode
+.vscode/
+
+# Database
+*.db
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+
+# OneDrive (workspace path contains OneDrive)
+*.onepkg

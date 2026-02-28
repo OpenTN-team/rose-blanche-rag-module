@@ -164,11 +164,33 @@ for r in results:
 
 ### Option 4 — Interface Web Streamlit
 
-```bash
-streamlit run app.py
-```
+L'utilitaire `app.py` fournit une interface graphique interactive.
 
-Ouvre `http://localhost:8501`.
+1. Assurez‑vous d'avoir préparé votre environnement et installé les dépendances :
+
+    ```bash
+    # activer virtualenv puis :
+    pip install -r requirements.txt   # contient streamlit
+    ```
+
+2. Lancer le serveur Streamlit :
+
+    ```bash
+    streamlit run app.py
+    ```
+
+3. Une fois démarré, le navigateur ouvrira automatiquement (ou visitez manuellement)
+   l'URL : `http://localhost:8501`.
+
+4. **Changer le thème** : cliquez sur l'icône en forme de hamburger en haut à droite
+   → *Settings* → *Theme* → sélectionnez *Light* ou *Dark*, ou laissez le navigateur
+   suivre le mode clair/sombre du système. Les cartes (`.result-card`, `.metric-card`) et le conteneur Markdown
+   s'adaptent automatiquement à la couleur de fond en mode clair ou sombre.
+
+> ⚠️ Si vous rencontrez des problèmes de mise en forme du texte markdown, la
+> correction a été ajoutée pour que le fond de `.stMarkdownContainer` soit
+> transparent / hérite du thème, rendant l'affichage compatible avec les modes
+> clair et sombre.
 
 ---
 
