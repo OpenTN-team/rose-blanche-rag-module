@@ -57,8 +57,8 @@ def get_connection(
     host: str     = "localhost",
     port: int     = 5432,
     dbname: str   = "boulangerie_db",
-    user: str     = "postgres",
-    password: str = "",
+    user: str     = "rag_user",
+    password: str = "rag_secret",
 ) -> psycopg2.extensions.connection:
     """
     Ouvre et retourne une connexion psycopg2.
@@ -111,9 +111,15 @@ class SemanticSearchPG:
         """
         k = top_k or self.top_k
 
+        # validate connection is still open (psycopg2 sets .closed=0 when open)
+        if getattr(self.conn, "closed", 1):
+            raise psycopg2.InterfaceError(
+                "La connexion PostgreSQL est fermée. "
+                "Appelez get_connection() pour en obtenir une nouvelle."
+            )
         # ── Étape 1 : Embedding de la question ────────────────────────
         q_vec = self._model.encode(question, normalize_embeddings=True)
-        q_vec_list = q_vec.tolist()          # format attendu par pgvector
+        q_vec_list = str(q_vec.tolist())     # format attendu par pgvector ('[0.1, 0.2, ...]')
 
         # ── Étape 2 : Requête SQL avec similarité cosinus ─────────────
         # pgvector : 1 - (vecteur <=> query)  = cosine similarity

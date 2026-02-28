@@ -5,6 +5,7 @@ Run with:
     streamlit run app.py
 """
 
+import html
 import os
 import tempfile
 import time
@@ -220,6 +221,8 @@ if submitted:
                     if res.fragment.page:
                         source_info += f"  —  page {res.fragment.page}"
 
+                    safe_text = html.escape(res.fragment.text.strip())
+                    safe_source = html.escape(source_info)
                     st.markdown(
                         f"""
                         <div class="result-card">
@@ -234,10 +237,10 @@ if submitted:
                                     Similarité : {res.score:.4f} &nbsp;|&nbsp; {score_pct:.1f}%
                                 </span>
                             </div>
-                            <div class="source-tag">{source_info}</div>
+                            <div class="source-tag">{safe_source}</div>
                             <hr style="border:none; border-top:1px solid #dde3f0; margin:0.6rem 0;">
                             <div style="white-space:pre-wrap; line-height:1.6;">
-                                {res.fragment.text.strip()}
+                                {safe_text}
                             </div>
                         </div>
                         """,

@@ -23,7 +23,6 @@ Options :
 
 Ce script peut être exécuté depuis l'environnement virtuel du projet.
 """
-
 import argparse
 import os
 import sys
@@ -33,6 +32,7 @@ import psycopg2
 import psycopg2.extras
 from sentence_transformers import SentenceTransformer
 
+import config
 from rag_module.loader import DocumentLoader
 from rag_module.pg_searcher import get_connection
 
@@ -73,11 +73,11 @@ def main():
 
     # 1. Connexion à la base
     conn = get_connection(
-        host=args.db_host or "localhost",
-        port=args.db_port or 5432,
-        dbname=args.db_name or "boulangerie_db",
-        user=args.db_user or "postgres",
-        password=args.db_pass or "",
+        host=args.db_host or config.DB_HOST,
+        port=args.db_port or config.DB_PORT,
+        dbname=args.db_name or config.DB_NAME,
+        user=args.db_user or config.DB_USER,
+        password=args.db_pass or config.DB_PASSWORD,
     )
     cur = conn.cursor()
 
@@ -109,8 +109,8 @@ def main():
         # insertion en base
         for frag, vec in zip(fragments, embeddings.tolist()):
             cur.execute(
-                "INSERT INTO embeddings (id_document, texte_fragment, vecteur) VALUES (%s,%s,%s)",
-                (doc_id, frag.text, vec),
+                "INSERT INTO embeddings (id_document, texte_fragment, vecteur) VALUES (%s, %s, %s::vector)",
+                (doc_id, frag.text, str(vec)),
             )
         conn.commit()
         print(f"  inséré {len(texts)} fragments")
